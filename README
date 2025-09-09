@@ -1,0 +1,17 @@
+README
+Name: Om Varma Dendukuri 
+ID no: 2025A4PS0677H
+
+This is my solution to task 1 of the third round of JANUS.
+
+I explained how the code works with comments in the code itself!
+
+the way i have wired the Quectel L89HA GNSS module to the arduino board is as follows:-
+
+Quectel L89HA GNSS---Arduino
+VCC---3.3 V (The voltage from the arduino is 5v we have to reduce it by using voltage dividers and resistors to 3.3v or else the device will get spoilt)
+GND---GND
+TXD---Arduino RX 8th pin 
+RXD---Arduino TX 7th pin
+
+The code reads the NMEA data transmitted from Quectel L89HA GNSS to the ardunio breaks it into its constituent values and returns it on the serial.
